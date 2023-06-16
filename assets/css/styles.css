@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+#cabecera {
+    background-color: #801780;
+    color: white;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+}
+
+.hamburguer-menu {
+    display: none;
+    width: 35px;
+}
+
+#principal {
+    display: flex;
+    flex-direction: row;
+}
+
+/* DISEÑO RESPONSIVO */
+@media screen and (max-width: 600px) {
+    ul {
+        display: none;
+    }
+
+    .hamburguer-menu {
+        display: block;
+    }
+
+    #cabecera {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+/* IZQUIERDA------------------------------------------------- */
+
+#izquierda {
+    background-color: rgb(65, 2, 88);
+    width: 28%;
+    /* padding: 15px; */
+    border: 1px solid white;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#contenedorChats {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-image: url(/assets/img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 55px;
+}
+
+.contenedorDatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 30px;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.contenedorDatos>div {
+    display: flex;
+    align-items: center;
+}
+
+.imagen {
+    width: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.nombre {
+    color: rgb(12, 176, 234);
+    margin-right: 10px;
+}
+
+.fecha {
+    color: rgba(255, 255, 255, 0.648);
+}
+
+
+/* DERECHA------------------------------------------- */
+
+#derecha {
+    background-color: #400958;
+    width: 68%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+#tituloChat {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid white;
+}
+
+#chatGeneral {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-right {
+    color: white;
+    background-color: rgb(103, 20, 95);
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.hora {
+    color: rgb(12, 176, 234);
+    margin-left: 10px;
+}
+
+.check {
+    width: 12px;
+}
+
+.chat-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+.mensaje-left {
+    color: white;
+    background-color: rgb(34, 29, 124);
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.send {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-image: url(/assets/img/send.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+}
+
+.clip {
+    width: 20px;
+    margin-right: 10px;
+}
